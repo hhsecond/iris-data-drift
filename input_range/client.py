@@ -15,7 +15,7 @@ con.tensorset("input", inp)
 
 # Load and save model
 device = 'cpu'
-model = load_model("logistic.onnx")
+model = load_model("../logistic.onnx")
 con.modelset("sklearn_model", 'onnx', device, model)
 
 # Run Model

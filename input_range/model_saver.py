@@ -19,4 +19,4 @@ logistic.fit(X_train, y_train)
 initial_type = utils.guess_onnx_tensortype(
     node_name='float_input', dtype='float32', shape=(1, 4))
 
-save_sklearn(logistic, 'logistic.onnx', initial_types=[initial_type])
+save_sklearn(logistic, '../logistic.onnx', initial_types=[initial_type])
